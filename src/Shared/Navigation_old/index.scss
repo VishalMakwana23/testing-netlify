@@ -1,0 +1,75 @@
+@import "../../App.scss";
+
+.navigation {
+  border-bottom: $border;
+  .nav_bar {
+    .header_nav {
+      gap: 20px;
+      .header_option {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+        .user_profile {
+          border-radius: 50%;
+        }
+        .profile_info {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          span {
+            font-size: 19px;
+            font-weight: 500;
+            color: $textColor;
+            &.username{
+            font-size: 16px;
+            color: $textLightColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.notification_list {
+  .MuiMenu-list {
+    padding: 0;
+    .box {
+      // padding: 1rem;
+      .title {
+        color: $textColor;
+        // margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 1rem;
+      }
+      .new {
+        li {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          gap: 15px;
+          padding: 1rem;
+          .profile {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
+          .content {
+            // font-size: 12px;
+            color: $textColor;
+            width: 271px;
+            white-space: normal;
+            span {
+              color: $textLightColor;
+            }
+          }
+          .small_theme_btn {
+            min-width: 110px;
+          }
+        }
+      }
+    }
+  }
+}

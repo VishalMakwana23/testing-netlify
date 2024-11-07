@@ -1,0 +1,72 @@
+@import "../../../App.scss";
+.error_text {
+  color: $primaryColor;
+  margin-top: 5px;
+  display: block;
+  margin-left: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 500ms;
+}
+.header_for_terms {
+  border-bottom: $border;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+.change-password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: calc(100vh - 60px);
+  align-self: center;
+}
+.password-input {
+  width: 100%;
+}
+.password-input-container {
+  border-color: #d9d9d9 !important;
+  border-radius: 20px !important;
+  height: 60px !important;
+  margin-top: 5px !important;
+}
+input {
+  &::placeholder {
+    color: #7c7c7c !important;
+    font-size: 15px;
+  }
+}
+.password-change-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  color: #040406;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+.change-password-main-container {
+  width: 40%;
+}
+.varify-btn-container {
+  background-color: #e84127;
+  border-radius: 20px;
+  width: 40%;
+  margin-top: 20px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.varify-btn-text-style {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #f8f9f4;
+  cursor: pointer;
+}

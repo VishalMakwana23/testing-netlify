@@ -1,0 +1,15 @@
+.chart_for_all {
+  // border: 1px solid #E7E7E7;
+  // padding: 1rem;
+
+  .highcharts-credits {
+    display: none;
+  }
+
+  .highcharts-legend-item {
+    .highcharts-point {
+      rx: 0;
+      ry: 0;
+    }
+  }
+}

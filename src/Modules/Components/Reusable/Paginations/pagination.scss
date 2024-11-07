@@ -1,0 +1,82 @@
+@import "../../../../assets/custom.scss";
+
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+  margin: auto 0;
+  padding: 0;
+
+  .pagination-item {
+    // padding: 0 12px;
+    height: 32px;
+    text-align: center;
+    margin: auto 4px;
+    color: $text_color2;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.01071em;
+    border-radius: 16px;
+    line-height: 1.43;
+    font-size: 13px;
+    min-width: 32px;
+    background: #ffffff;
+    font-weight: 500;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    .icon {
+      font-size: 20px;
+    }
+
+    &.dots:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.selected {
+      background: #1a1a1a;
+      border: 1px solid #1a1a1a;
+      color: #ffffff;
+    }
+
+    &.left {
+      background: #191919;
+      border: 1px solid #191919;
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &.right {
+      background: #191919;
+      border: 1px solid #191919;
+
+      .icon {
+        color: #fff;
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+      background: #ffffff;
+      border: 1px solid #d9d9d9;
+      .icon {
+        color: #191919;
+      }
+      //   &:hover {
+      //     background-color: transparent;
+      //     cursor: default;
+      //   }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .pagination-container {
+    margin: 1rem auto 0;
+  }
+}

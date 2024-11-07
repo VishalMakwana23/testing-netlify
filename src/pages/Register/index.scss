@@ -1,0 +1,249 @@
+@import "../../App.scss";
+
+.register_page {
+  position: relative;
+  overflow: hidden;
+  .login_banner_vector1 {
+    position: absolute;
+    top: 68px;
+    left: 779px;
+  }
+  .login_banner_vector2 {
+    position: absolute;
+    bottom: 70px;
+    left: 1045px;
+  }
+  .loginTopbar {
+    margin-bottom: 106px;
+    padding-top: 50px;
+  }
+  .inner_box {
+    &.left {
+      h1 {
+        font-size: 53px;
+        font-weight: 700;
+        color: $textColor;
+        span {
+          color: $primaryColor;
+        }
+      }
+      p {
+        font-size: 17px;
+        font-weight: 400;
+        color: $textColor;
+        a {
+          font-size: 18px;
+          font-weight: 700;
+          color: $primaryColor;
+        }
+      }
+      img {
+        margin-top: 80px;
+      }
+    }
+    &.right {
+      width: 80%;
+      margin-left: auto;
+      padding: 0 0 117px 0;
+      .heading {
+        margin-bottom: 42px;
+        text-align: center;
+        h1 {
+          color: $textColor;
+          font-size: 35px;
+          font-weight: 600;
+        }
+        p {
+          color: $textColor;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      form {
+        .number {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          .code {
+            width: 30%;
+          }
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a {
+            color: $primaryColor;
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .password {
+          position: relative;
+          display: flex;
+          align-items: center;
+          .eye {
+            position: absolute;
+            right: 34px;
+          }
+        }
+        .username {
+          position: relative;
+          display: flex;
+          align-items: center;
+          img {
+            position: absolute;
+            right: 34px;
+          }
+        }
+        .needHelp {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+          p {
+            margin: 0;
+          }
+        }
+        .theme_btn {
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .register_page {
+    .inner_box {
+      &.right {
+        width: 90%;
+        margin-left: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .register_page {
+    .top {
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    .loginTopbar {
+      margin-bottom: 52px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d9d9d9;
+      border-width: 2px;
+      text-align: center;
+    }
+    .inner_box {
+      &.left {
+        text-align: center;
+        width: 80%;
+        margin: auto auto 52px;
+        img {
+          display: none;
+        }
+      }
+      &.right {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .register_page {
+    .top {
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    .loginTopbar {
+      margin-bottom: 52px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d9d9d9;
+      border-width: 2px;
+      text-align: center;
+    }
+    .inner_box {
+      &.left {
+        text-align: center;
+        width: 80%;
+        margin: auto auto 52px;
+        img {
+          display: none;
+        }
+      }
+      &.right {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .register_page {
+    .top {
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    .loginTopbar {
+      margin-bottom: 52px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d9d9d9;
+      border-width: 2px;
+      text-align: center;
+    }
+    .inner_box {
+      margin-bottom: 42px;
+      &.left {
+        text-align: left;
+        width: 100%;
+        h1 {
+          font-size: 33px;
+        }
+        p {
+          font-size: 14px;
+          a {
+            font-size: 14px;
+          }
+        }
+        img {
+          display: none;
+        }
+      }
+      &.right {
+        width: 100%;
+        margin: auto;
+        .heading {
+          text-align: left;
+          margin-bottom: 26px;
+          h1 {
+            font-size: 28px;
+          }
+        }
+        form {
+          .number {
+            .code {
+              width: 50%;
+            }
+          }
+          .needHelp {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

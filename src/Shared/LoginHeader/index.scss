@@ -1,0 +1,41 @@
+@import "../../App.scss";
+
+.loginTopbar {
+  margin-bottom: 106px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .loginTopbar {
+    margin-bottom: 52px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    border-width: 2px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .loginTopbar {
+    margin-bottom: 52px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    border-width: 2px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .loginTopbar {
+    margin-bottom: 52px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    border-width: 2px;
+    text-align: center;
+  }
+}

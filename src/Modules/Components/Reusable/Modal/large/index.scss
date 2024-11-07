@@ -1,0 +1,473 @@
+@import "../../../../../App.scss";
+
+.video-player-post {
+  height: 100%;
+  width: 100%;
+}
+
+.type-post-text {
+  text-transform: capitalize;
+  color: #E84127;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.row-post-detail-view {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-scroll-view {
+  height: 28vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.largeModal {
+  .MuiSheet-root {
+    width: 100%;
+    border-radius: 20px !important;
+    max-height: 90%;
+    max-width: 80% !important;
+
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+
+  .comment-user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #1d51fe;
+  }
+
+  .popMainWrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .post_name {
+      color: $textColor;
+      margin-bottom: 2%;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .left {
+    .images {
+      line-height: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      // height: 100%;
+
+      &.img_show {
+        display: none;
+      }
+
+      .video {
+        max-height: 500px;
+      }
+
+      .postSlide {
+        .blog_multi_img {
+          img {
+            border-radius: 8px;
+            height: 500px;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    .profile {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid #1d51fe;
+      }
+    }
+
+    .follow_btn {
+      .theme_btn {
+        border-radius: 6px !important;
+      }
+    }
+
+    .content {
+      p {
+        font-weight: 500;
+        margin: 15px 0px 15px 0px;
+        color: $textColor;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+
+      .hashtags {
+        color: $hashtagColor;
+
+        span {
+          font-style: italic;
+        }
+      }
+
+      .like_comment {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.5rem;
+
+        .action {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 5px;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .upload {
+      .opinion {
+        input {
+          border: none;
+          border-radius: 20px;
+          background-color: #000000;
+          padding: 1rem;
+          width: 100%;
+
+          &::placeholder {
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            opacity: 70%;
+            width: 188px;
+            height: 20px;
+          }
+
+          &:focus-visible {
+            color: #ffffff;
+            outline: 0;
+          }
+        }
+
+        label {
+          margin-left: -45px;
+          width: 36px;
+        }
+      }
+
+      .opinion_send {
+        button {
+          width: 60px;
+          height: 60px;
+          border: none;
+          border-radius: 20px;
+          background-color: #e84127;
+        }
+      }
+    }
+
+    .brief_profile {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid #1d51fe;
+      }
+    }
+
+    .right_side {
+      p {
+        font-weight: 500;
+        margin: 15px 0px 15px 0px;
+        color: $textColor;
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      // .hashtags {
+      //   margin-top: 20px;
+      // }
+      .popup_hashtags {
+        color: $hashtagColor;
+        padding-bottom: 15px;
+        padding-top: 15px;
+
+        span {
+          font-style: italic;
+        }
+
+        border-bottom: 1px solid #353535;
+      }
+
+      .user_profile {
+        color: #040406;
+
+        .c {
+          color: #040406;
+          width: 80%;
+        }
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 3px solid #1d51fe;
+        }
+
+        .users {
+          width: 30%;
+        }
+      }
+
+      .reply_likes {
+        color: #040406;
+      }
+
+      .follow_btn {
+        .theme_btn {
+          border-radius: 6px !important;
+        }
+      }
+
+      .brief_likes {
+        img {
+          cursor: pointer;
+        }
+
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .upload_img {
+      margin-top: 50px;
+      background-color: #d2d2d2;
+      border-radius: 8px;
+      padding-bottom: 0;
+
+      .brief {
+        input {
+          border: none;
+          border-radius: 8px;
+          background-color: #d2d2d2;
+          padding: 20px 30px 20px 30px;
+
+          &::placeholder {
+            color: #040406;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+          }
+
+          &:focus-visible {
+            color: #040406;
+            outline: 0;
+          }
+        }
+
+        label {
+          margin-left: 33%;
+          width: 36px;
+        }
+      }
+
+      .brief_send {
+        button {
+          margin-top: 10px;
+          margin-right: 15px;
+          width: 42px;
+          height: 42px;
+          border: none;
+          border-radius: 11px;
+          background-color: #e84127;
+
+          img {
+            height: 18px;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .MuiModal-backdrop {
+    background-color: #000000a8 !important;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .largeModal {
+    .right {
+      .content {
+        .like_comment {
+          padding: 0;
+
+          img {
+            width: 25px;
+            height: 25px;
+          }
+
+          h5 {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .upload {
+        .opinion {
+          input {
+            padding: 0.5rem 1rem;
+          }
+        }
+
+        .opinion_send {
+          button {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .video-player-post {
+    height: 150px;
+    width: 100%;
+  }
+  .largeModal {
+    .MuiSheet-root {
+      padding: 1rem !important;
+    }
+
+    .MuiModal-backdrop {
+      background-color: #000000a8 !important;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
+    }
+
+    .popMainWrapper {
+      .post_name {
+        font-size: 14px;
+
+        h4 {
+          color: $textColor;
+          font-size: 14px;
+          margin-bottom: 5%;
+        }
+      }
+    }
+
+    .left {
+      .images {
+        &.img_hide {
+          display: none;
+        }
+
+        &.img_show {
+          display: block;
+        }
+
+        .video {
+          max-height: 400px;
+        }
+
+        img {
+          max-height: 400px;
+          height: auto;
+        }
+      }
+    }
+
+    .right {
+      .profile {
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 3px solid #1d51fe;
+        }
+      }
+
+      .follow_btn {
+        .theme_btn {
+          border-radius: 5px !important;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          font-weight: 300 !important;
+        }
+      }
+
+      .content {
+        p {
+          font-size: 18px;
+        }
+
+        .hashtags {
+          color: $hashtagColor;
+          margin-bottom: 15px;
+
+          span {
+            font-style: italic;
+          }
+        }
+
+        .like_comment {
+          img {
+            height: 18px;
+          }
+
+          h5 {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .upload {
+      .opinion {
+        input {
+          padding: 10px 20px;
+          width: 100%;
+        }
+
+        label {
+          margin-left: -36px;
+          width: 34px;
+        }
+      }
+
+      .opinion_send {
+        button {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+}

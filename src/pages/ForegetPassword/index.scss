@@ -1,0 +1,138 @@
+@import "../../App.scss";
+
+.forgetPass_page {
+  position: relative;
+  overflow: hidden;
+  .loginTopbar {
+    margin-bottom: 106px;
+    padding-top: 50px;
+  }
+  .inner_box {
+    &.card {
+      text-align: center;
+      .number {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .code {
+          width: 30%;
+        }
+      }
+      .mailBoxIcon {
+        margin-bottom: 24px;
+      }
+      .heading {
+        margin-bottom: 42px;
+        text-align: center;
+        h1 {
+          font-size: 35px;
+          font-weight: 600;
+          // margin-bottom: 42px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+      }
+      .theme_btn {
+        padding: 1rem 2rem;
+      }
+      .typeForMail {
+        border: 0.67px solid #d9d9d9;
+        margin-top: 42px;
+        padding: 10px;
+        border-radius: 10.67px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button {
+          width: 100%;
+        }
+      }
+      .PhoneInput {
+        position: relative;
+        display: flex;
+        align-items: center;
+        &.PhoneInput--focus {
+          border: 0;
+          outline: none;
+        }
+        .PhoneInputCountry {
+          position: absolute;
+          height: 100%;
+          margin: 0;
+          left: 3%;
+          .PhoneInputCountryIcon--border {
+            width: 40px;
+            height: 40px;
+            box-shadow: none !important;
+            background-color: transparent !important;
+          }
+        }
+        .PhoneInputInput {
+          background-color: #fff !important;
+          border: 1px solid #d9d9d9;
+          border-radius: 20px !important;
+          font-size: 16px !important;
+          font-weight: 500 !important;
+          padding: 20px;
+          padding-left: 4.5rem;
+          &:focus {
+            outline: 0;
+          }
+        }
+      }
+      .backBtn {
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        gap: 22.28px;
+        color: #040406;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .forgetPass_page {
+    .inner_box {
+      &.card {
+        .heading {
+          margin-bottom: 28px;
+          h1 {
+            font-size: 24px;
+            margin-bottom: 28px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+        .typeForMail {
+          margin-top: 28px;
+        }
+        .backBtn {
+          margin-top: 28px;
+          display: flex;
+          align-items: center;
+          gap: 22.28px;
+          color: #040406;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: 400;
+        }
+        .PhoneInput {
+        }
+      }
+    }
+  }
+}

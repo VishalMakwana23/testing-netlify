@@ -1,0 +1,18 @@
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconsax/Linear/calendar2">
+<path id="Vector" d="M10 2.5V6.25M20 2.5V6.25M4.375 11.3625H25.625M26.25 10.625V21.25C26.25 25 24.375 27.5 20 27.5H10C5.625 27.5 3.75 25 3.75 21.25V10.625C3.75 6.875 5.625 4.375 10 4.375H20C24.375 4.375 26.25 6.875 26.25 10.625Z" stroke="url(#paint0_linear_129_468)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14.9937 17.125H15.0062M10.3674 17.125H10.3799M10.3674 20.875H10.3799" stroke="url(#paint1_linear_129_468)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_129_468" x1="3.75" y1="21.25" x2="27.128" y2="19.9021" gradientUnits="userSpaceOnUse">
+<stop stop-color="#18BAD4"/>
+<stop offset="0.515625" stop-color="#31B680"/>
+<stop offset="1" stop-color="#80C242"/>
+</linearGradient>
+<linearGradient id="paint1_linear_129_468" x1="10.3674" y1="19.9375" x2="15.173" y2="19.5567" gradientUnits="userSpaceOnUse">
+<stop stop-color="#18BAD4"/>
+<stop offset="0.515625" stop-color="#31B680"/>
+<stop offset="1" stop-color="#80C242"/>
+</linearGradient>
+</defs>
+</svg>

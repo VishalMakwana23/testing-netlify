@@ -1,0 +1,252 @@
+@import "../App.scss";
+.main {
+  &.right {
+    direction: rtl;
+    .inner_box {
+      &.right {
+        form {
+          .password {
+            .eye {
+              left: 34px;
+              right: auto;
+            }
+          }
+          .username {
+            img {
+              left: 34px;
+              right: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.card {
+  border: 20px !important;
+  box-shadow: $box-shadow;
+  padding: 30px;
+
+  .card-body {
+    padding: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: $textColor;
+    margin-bottom: 10px;
+  }
+  .form-control {
+    background-color: #fff !important;
+    border: $border;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    height: 60px;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  .form-select {
+    background-color: #fff !important;
+    border: $border;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+    height: 60px;
+    background-image: url(./icons/theme_down_chevron.svg) !important;
+    background-position: right 0.75rem center !important;
+    background-repeat: no-repeat !important;
+    background-size: 16px 16px !important;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input {
+      border: $border !important;
+      // border-width: 1.5px;
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+    label {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .error_text {
+    color: $primaryColor;
+    margin-top: 5px;
+    display: block;
+    margin-left: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 500ms;
+  }
+}
+
+.theme_btn {
+  // height: 60px !important;
+  border-radius: 20px !important;
+  // font-size: 15px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  background-color: $primaryColor !important;
+  border: 0 !important;
+  color: #f8f9f4 !important;
+  padding: 0.5rem 2rem;
+  &.light {
+    background-color: #e3e3e3 !important;
+    color: #040406 !important;
+  }
+  &.dark {
+    background-color: #040406 !important;
+    color: #fff !important;
+  }
+}
+.small_theme_btn {
+  height: 40px !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  background-color: $primaryColor !important;
+  border: 0 !important;
+  color: #f8f9f4 !important;
+  &.light {
+    background-color: #e3e3e3 !important;
+    color: #040406 !important;
+  }
+}
+.password {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .eye {
+    position: absolute;
+    right: 34px;
+  }
+}
+.MuiModal-root {
+  .MuiMenu-paper {
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgb(0 0 0 / 21%);
+  }
+}
+.languageSelect {
+  min-width: 150px;
+  border: $border;
+  border-radius: 20px !important;
+  // padding: 0 0.5rem;
+  div {
+    border-radius: 20px !important;
+    box-shadow: none !important;
+  }
+  .css-t3ipsp-control {
+    border: 0 !important;
+  }
+  .css-13cymwt-control {
+    border-radius: 20px !important;
+    box-shadow: none !important;
+    border: 0;
+  }
+  .css-1nmdiq5-menu {
+    border: $border;
+    border-radius: 20px !important;
+    padding: 0.5rem;
+    line-height: 30px;
+    box-shadow: none;
+    color: $textColor;
+    .css-1n6sfyn-MenuList {
+      padding: 0;
+      .css-10wo9uf-option {
+        border-radius: 20px;
+      }
+      .css-d7l1ni-option {
+        border-radius: 20px;
+      }
+    }
+  }
+  // #react-select-12-listbox {
+  // }
+}
+.footer_sec {
+  .icons {
+    .MuiList-root {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+  .form-group {
+    .form-control {
+      padding: 13.33px;
+      border-radius: 13.33px !important;
+    }
+    .form-select {
+      padding: 13.33px;
+      border-radius: 13.33px !important;
+    }
+  }
+  .theme_btn {
+    padding: 13.33px;
+    border-radius: 13.33px !important;
+    &.light {
+      background-color: #e3e3e3 !important;
+      color: #040406 !important;
+    }
+  }
+  .footer_sec {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+
+    // -- new border
+    border-top: 1px solid #CCC;
+    background: var(--Backgrounds-Primary, #FFF);
+    box-shadow: 0px -2px 10.5px 0px rgba(0, 0, 0, 0.08);
+
+    .icons {
+      .MuiList-root {
+        display: flex;
+        justify-content: space-around;
+        .MuiListItem-root {
+          justify-content: center;
+        }
+        .MuiListItemIcon-root {
+          min-width: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+// @media only screen and (min-width: 1201px) and (max-width: 1600px){}
+// @media only screen and (min-width: 1024px) and (max-width: 1200px){}
+// @media only screen and (min-width: 768px) and (max-width: 1023px){}
+// @media only screen and (min-width: 480px) and (max-width: 767px){}
+// @media only screen and (min-width: 320px) and (max-width: 479px){}

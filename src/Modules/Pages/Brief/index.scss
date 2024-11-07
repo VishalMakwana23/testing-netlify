@@ -1,0 +1,239 @@
+@import "../../../App.scss";
+
+.brief {
+  .exploreBox {
+    padding: 32px 8%;
+    margin-top: 100px;
+
+    .topBtn {
+      margin-bottom: 30px;
+
+      .selectType {
+        background: #d1d1d1;
+        display: flex;
+        align-items: center;
+        border-radius: 50px;
+        max-width: 280px;
+        margin: auto;
+        padding: 0.6rem 0.5rem;
+
+        &.other {
+          a {
+            width: 100%;
+            color: $textColor;
+            text-align: center;
+
+            &:first-child {
+              border-right: $border;
+            }
+          }
+        }
+
+        &.arabic {
+          a {
+            width: 100%;
+            color: $textColor;
+            text-align: center;
+
+            &:first-child {
+              border-left: $border;
+            }
+          }
+        }
+      }
+    }
+
+    // .briefpost {
+    //   padding: 30px;
+
+    //   .post_card_header {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     .profile {
+    //       display: flex;
+    //       align-items: center;
+    //       gap: 20px;
+
+    //       img {
+    //         width: 60px;
+    //         height: 60px;
+    //         border-radius: 50%;
+    //       }
+
+    //       .name {
+    //         text-align: left;
+
+    //         h1 {
+    //           font-size: 20px;
+    //           font-weight: 500;
+    //           color: $textColor;
+    //         }
+
+    //         span {
+    //           font-size: 16px;
+    //           font-weight: 300;
+    //           color: $textLightColor;
+    //         }
+    //       }
+    //     }
+
+    //     .action {
+    //       display: flex;
+    //       align-items: center;
+    //       gap: 25px;
+
+    //       button {
+    //         border-radius: 12px !important;
+    //       }
+    //     }
+    //   }
+
+    //   .description {
+    //     margin-top: 20px;
+    //     text-align: left;
+
+    //     span {
+    //       font-weight: 500;
+    //       font-size: 12px;
+    //       opacity: 70%;
+    //     }
+    //   }
+
+    //   .post_image {
+    //     margin-top: 20px;
+    //     display: flex;
+    //     justify-content: center;
+    //     border-bottom: 2px solid #353535;
+
+    //     .brief_icon {
+    //       img {
+    //         cursor: pointer;
+    //       }
+
+    //       display: flex;
+    //       align-items: flex-end;
+    //       margin-bottom: 70px;
+    //     }
+    //   }
+    // }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .brief {
+    .exploreBox {
+      padding: 0px 0px !important;
+      margin-top: 0 !important;
+      overflow: auto;
+
+      .topBtn {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        top: 70px;
+        margin: 0;
+
+        .selectType {
+          background: transparent !important;
+
+          &.other {
+            a {
+              &:first-child {
+                border-right: 1px solid #ffffff;
+                color: #aba8a8;
+              }
+
+              &:last-child {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+
+      // .briefpost {
+      //   padding: 0px !important;
+      //   display: flex;
+      //   flex-direction: column-reverse;
+
+      //   .post_card_header {
+      //     display: flex;
+      //     justify-content: space-between;
+      //     align-items: center;
+
+      //     .profile {
+      //       display: flex;
+      //       align-items: center;
+      //       gap: 20px;
+
+      //       img {
+      //         width: 60px;
+      //         height: 60px;
+      //         border-radius: 50%;
+      //       }
+
+      //       .name {
+      //         text-align: left;
+
+      //         h1 {
+      //           font-size: 20px;
+      //           font-weight: 500;
+      //           color: $textColor;
+      //         }
+
+      //         span {
+      //           font-size: 16px;
+      //           font-weight: 300;
+      //           color: $textLightColor;
+      //         }
+      //       }
+      //     }
+
+      //     .action {
+      //       display: flex;
+      //       align-items: center;
+      //       gap: 25px;
+
+      //       button {
+      //         border-radius: 12px !important;
+      //       }
+      //     }
+      //   }
+
+      //   .description {
+      //     margin-top: 20px;
+      //     text-align: left;
+
+      //     span {
+      //       font-weight: 500;
+      //       font-size: 12px;
+      //       opacity: 70%;
+      //     }
+      //   }
+
+      //   .post_image {
+      //     margin-top: 20px;
+      //     display: flex;
+      //     justify-content: center;
+      //     border-bottom: none !important;
+
+      //     .brief_icon {
+      //       position: absolute;
+      //       top: 182%;
+      //       right: 0;
+
+      //       img {
+      //         cursor: pointer;
+      //       }
+
+      //       display: flex;
+      //       align-items: flex-end;
+      //       margin-bottom: 70px;
+      //     }
+      //   }
+      // }
+    }
+  }
+}

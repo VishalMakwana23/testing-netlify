@@ -1,0 +1,149 @@
+.blockreport_box {
+    width: max-content;
+    // position: absolute !important;
+    // z-index: 9 !important;
+
+    // .MuiModal-backdrop {
+    //     width: max-content;
+    //     position: absolute !important;
+    //     z-index: 0 !important;
+    // }
+
+    .MuiPaper-rounded {
+        min-width: 150px;
+        max-width: max-content;
+        box-shadow: 0px 0px 40px 0px rgb(82 63 105 / 13%);
+
+        ul {
+            padding: 0.5rem 1rem;
+
+            li {
+                padding: 0.5rem 1rem;
+                font-size: 16px;
+                font-weight: 500;
+                color: #5E6278;
+                transition: 500ms;
+                background-color: transparent;
+                border-bottom: 1px dashed #dcdcdc52;
+
+                .icon {
+                    margin-right: 1rem;
+                    color: #5E6278;
+                    font-size: 1.5rem !important;
+                    width: 1.5rem;
+                    line-height: initial
+                }
+
+                .bac {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: initial;
+
+                    span {
+                        color: #A1A5B7;
+                        line-height: initial;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #009688;
+
+                    .icon {
+                        color: #009688;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.megamenu {
+    width: max-content;
+    // position: absolute !important;
+    // z-index: 9 !important;
+
+    // .MuiModal-backdrop {
+    //     width: max-content;
+    //     position: absolute !important;
+    //     z-index: 0 !important;
+    // }
+
+    .MuiPaper-rounded {
+        min-width: 150px;
+        max-width: max-content;
+        box-shadow: 0px 0px 40px 0px rgb(82 63 105 / 13%);
+
+        ul {
+            padding: 0.5rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            justify-content: space-between;
+
+            li {
+                padding: 1rem 1rem;
+                font-size: 16px;
+                font-weight: 500;
+                color: #5E6278;
+                transition: 500ms;
+                background-color: transparent;
+                border-bottom: 1px dashed rgba(220, 220, 220, 0.3215686275);
+                width: 50%;
+
+                .icon {
+                    margin-right: 0.5rem;
+                    color: #5E6278;
+                    font-size: 1.5rem !important;
+                    width: 2.5rem;
+                    line-height: initial;
+                }
+
+                .bac {
+                    display: flex;
+                    flex-direction: column;
+                    line-height: initial;
+
+                    span {
+                        color: #A1A5B7;
+                        line-height: initial;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: #009688;
+
+                    .icon {
+                        color: #009688;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .megamenu {
+        .MuiPaper-rounded {
+            ul {
+                width: auto;
+                li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

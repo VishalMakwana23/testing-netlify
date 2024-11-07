@@ -1,0 +1,375 @@
+@import "../../../../../App.scss";
+
+.row {
+  .block_badge {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .upload_images {
+    margin-top: 20%;
+    .MuiButtonBase-root {
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-top: 20px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 25px;
+      }
+      .MuiTouchRipple-root {
+        display: none;
+      }
+    }
+
+    :hover {
+      background-color: transparent;
+    }
+  }
+  .select_computer {
+    text-align: center;
+    margin-top: 70px;
+    .MuiButtonBase-root {
+      display: flex;
+      flex-direction: column;
+      span {
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px 60px 20px 60px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        background-color: $primaryColor;
+        border: none;
+        color: #f8f9f4;
+      }
+      .MuiTouchRipple-root {
+        display: none;
+      }
+    }
+    :hover {
+      background-color: transparent;
+    }
+  }
+
+  .new_brief {
+    display: flex;
+    align-items: flex-start;
+    img {
+      cursor: pointer;
+    }
+    p {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29.05px;
+      color: $textColor;
+    }
+  }
+
+  .brief_select {
+    .MuiButtonBase-root {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      span {
+        width: 100%;
+        border-radius: 16px;
+        padding: 20px 60px 20px 60px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 500;
+        background-color: #000000;
+        color: #f8f9f4;
+      }
+      .MuiTouchRipple-root {
+        display: none;
+      }
+    }
+    :hover {
+      background-color: transparent;
+    }
+  }
+
+  .brief_next {
+    button {
+      width: 100%;
+      border-radius: 16px;
+      padding: 20px 60px 20px 60px;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500;
+      background-color: $primaryColor;
+      border: none;
+      color: #f8f9f4;
+    }
+  }
+
+  .review_name {
+    color: $textColor;
+    margin-bottom: 1%;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    img {
+      cursor: pointer;
+    }
+  }
+  .upload_image {
+    &.img_show {
+      display: none;
+    }
+    img {
+      border-radius: 8px 8px 8px 8px;
+    }
+  }
+
+  .user_image {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 3px solid #1d51fe;
+    }
+    span {
+      color: $textColor;
+    }
+  }
+  .para {
+    font-size: 12px;
+    &.border_show {
+      border-top: 1px solid #353535;
+      margin-top: 10px;
+    }
+    .description {
+      margin: 20px 0px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .hashtags {
+      border-bottom: 1px solid #353535;
+      padding: 0px 0px 20px 0px;
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
+  .review {
+    button {
+      width: 100%;
+      margin-top: 10%;
+      border-radius: 20px;
+      padding: 20px 60px 20px 60px;
+      background-color: $primaryColor;
+      border: none;
+      color: #f8f9f4;
+    }
+    .p_btn {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .r_btn {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    border-bottom: 1px solid #353535;
+    padding-bottom: 10%;
+  }
+  .publish_btn {
+    button {
+      width: 100%;
+      margin-top: 10%;
+      border-radius: 20px;
+      padding: 20px 60px 20px 60px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      background-color: $primaryColor;
+      border: none;
+      color: #f8f9f4;
+    }
+    .main_btn {
+      border-bottom: 1px solid #353535;
+      padding-bottom: 10%;
+    }
+  }
+  .review_blog {
+    button {
+      width: 100%;
+      border-radius: 20px;
+      padding: 20px 60px 20px 60px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      background-color: $primaryColor;
+      border: none;
+      color: #f8f9f4;
+    }
+  }
+  .form-group {
+    margin-bottom: 10px;
+    label {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 14px;
+    }
+    .form-control {
+      background: transparent !important;
+      border-color: #d9d9d9;
+      border-radius: 20px !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      height: 60px;
+      &:focus {
+        box-shadow: none !important;
+      }
+    }
+    input {
+      &::placeholder {
+        color: #c1bebe !important;
+        font-size: 15px;
+      }
+    }
+    .form-area {
+      background: transparent !important;
+      border-color: #d9d9d9;
+      border-radius: 20px !important;
+      font-size: 16px !important;
+      font-weight: 500 !important;
+      width: 100%;
+      padding: 10px 15px;
+      &:focus-visible {
+        outline: 0 !important;
+      }
+    }
+    textarea {
+      &::placeholder {
+        color: #c1bebe !important;
+        font-size: 15px;
+      }
+    }
+    .img_video {
+      cursor: pointer;
+      .MuiButtonBase-root {
+        border: 1px solid #d9d9d9;
+        border-radius: 20px !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        padding: 5px;
+        display: flex;
+        height: 60px;
+        gap: 10px;
+        background: transparent;
+        span {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+        }
+        .css-8je8zh-MuiTouchRipple-root {
+          display: none;
+        }
+      }
+    }
+  }
+  .show_img {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    .multi_images {
+      position: relative;
+      height: 90px;
+      width: 80px;
+      img {
+        border-radius: 10px;
+      }
+      // video {
+      //   position: relative;
+      //   height: 90%;
+      //   width: 100%;
+      //   border-radius: 10px;
+      //   object-fit: cover;
+      // }
+      button {
+        border: none;
+        background: transparent;
+        img {
+          position: absolute;
+          top: 5px;
+          left: 56px;
+        }
+      }
+    }
+  }
+  .blogs_title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    color: $textColor;
+  }
+  .blog_hashtags {
+    span {
+      color: $primaryColor;
+    }
+  }
+  .publish_blog_btn {
+    button {
+      width: 100%;
+      margin-top: 5%;
+      border-radius: 20px;
+      padding: 20px 60px 20px 60px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      background-color: $primaryColor;
+      border: none;
+      color: #f8f9f4;
+    }
+  }
+  .outer_images {
+    .blog_multi_img {
+      height: 520px;
+      img {
+        height: 100%;
+        border-radius: 20px;
+      }
+      video {
+        height: 100%;
+      }
+    }
+  }
+  .getbrief_image {
+    height: 360px;
+    margin-bottom: 20px;
+    video {
+      width: 100%;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  .newbrief_upload_image {
+    height: 520px;
+    video {
+      width: 100%;
+    }
+    img {
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+  .publish_page_review {
+    height: 300px;
+    video {
+      width: 100%;
+    }
+    img {
+      height: 100%;
+      border-radius: 20px;
+    }
+  }
+}

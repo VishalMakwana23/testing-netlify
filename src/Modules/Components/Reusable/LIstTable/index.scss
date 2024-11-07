@@ -1,0 +1,254 @@
+@import "../../../../assets/custom.scss";
+
+.listdata_control_sec {
+  align-items: center;
+
+  .form-select {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .search_sec {
+    .search_input {
+      position: relative;
+      align-items: center;
+      display: flex;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .icon {
+        position: absolute;
+        left: 13px;
+        transform: rotateY(180deg);
+        font-size: 22px;
+      }
+
+      img {
+        position: absolute;
+        left: 10px;
+      }
+
+      input {
+        padding-left: 3rem !important;
+      }
+    }
+  }
+
+  .detail_button {
+    margin-left: 1rem;
+  }
+}
+
+.all_list {
+  .table-box {
+    box-shadow: none !important;
+    border: 0px;
+    // border-radius: 10px;
+    // overflow: hidden;
+    white-space: nowrap;
+
+    thead {
+      tr {
+        background: $theme_color;
+
+        th {
+          background: transparent !important;
+          border: 0px;
+          padding: 0.6rem 0.5rem;
+          color: #fff;
+
+          .MuiTableSortLabel-root {
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border: 1px solid rgba(217, 217, 217, 0.33);
+
+        &:nth-of-type(even) {
+          background-color: #fff !important;
+        }
+
+        td {
+          border: 0px !important;
+          padding: 0.6rem 0.5rem;
+          color: #606060;
+
+          .icon_td {
+            display: flex;
+            align-items: center;
+
+            .menu_icon {
+              font-size: 1.4rem !important;
+              margin-right: 7px;
+              width: 2rem;
+              color: #18212c;
+            }
+          }
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  .edit_delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn_edit {
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    background: #fff;
+    font-size: 20px;
+    color: #606060;
+    border: 1px solid #73c04d;
+    height: 36px;
+    // display: flex;
+    // align-items: center;
+    line-height: 18px;
+
+    svg {
+      color: #73c04d;
+    }
+
+    &.text {
+      font-size: 14px;
+      color: #73c04d;
+    }
+  }
+
+  .btn_dlt {
+    border-radius: 5px;
+    padding: 0 0.5rem;
+    background: #fff;
+    font-size: 20px;
+    color: #606060;
+    border: 1px solid $red;
+    height: 36px;
+    // display: flex;
+    // align-items: center;
+    line-height: 18px;
+
+    .icon {
+      color: $red;
+    }
+  }
+
+  .er_nodata {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem;
+    color: $text_color;
+  }
+
+  .page_nation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    background-color: rgba(214, 225, 232, 0.44);
+
+    .rowsPerPageOptions {
+      .p_18_text {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #606060;
+      }
+
+      .pagination_select {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        border: 1px solid #eeeeee;
+        border-radius: 5px;
+        margin: 0 10px;
+        color: #4d4d4d;
+        background-color: #fff;
+        padding: 2px 5px;
+
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .listdata_control_sec {
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .form-select {
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+
+    .search_sec {
+      width: 100%;
+    }
+
+    .detail_button {
+      margin-left: 0rem;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+  
+  .all_list {
+    .page_nation {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .listdata_control_sec {
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .form-select {
+      width: 100% !important;
+      margin-bottom: 10px;
+    }
+
+    .search_sec {
+      width: 100%;
+    }
+
+    .detail_button {
+      margin-left: 0rem;
+      margin-top: 1rem;
+      width: 100%;
+    }
+  }
+
+  .all_list {
+    .page_nation {
+      flex-direction: column;
+    }
+  }
+}

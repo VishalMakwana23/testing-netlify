@@ -1,0 +1,79 @@
+@import "../../../App.scss";
+
+.header_for_terms {
+  border-bottom: $border;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.block-account-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.block-account-main-container {
+  width: 42%;
+  margin-top: 40px;
+}
+.block-account-text-info {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: left;
+  color: #040406;
+  align-self: flex-start;
+}
+.iamge-and-text-main-contaioner {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.block-image-style {
+  width: 35.82px;
+  height: 35.82px;
+  border-radius: 60px;
+}
+.main-name-text-style {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #040406;
+}
+.followers-info-text {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #040406;
+}
+.name-and-followers-info-container {
+  margin-left: 10px;
+  align-items: center;
+}
+.unblock-text-style {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  text-align: left;
+  color: #ffffff;
+  align-self: center;
+}
+.unblock-container {
+  width: 110px;
+  height: 38px;
+  border-radius: 12px;
+  background-color: #e84127;
+  display: flex;
+  justify-content: center;
+}
+.image-and-unblock-text-container{
+  display: flex;
+  flex-direction: row;
+}

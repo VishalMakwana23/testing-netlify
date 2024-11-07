@@ -1,0 +1,111 @@
+@import "../../../../../App.scss";
+
+.col {
+  .row {
+    button {
+      border: none;
+      background: transparent;
+    }
+    span {
+      color: $textColor;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+  .buttons {
+    width: 25vw;
+    .heading {
+      display: flex;
+      justify-content: center;
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $textColor;
+      }
+    }
+    .block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      button {
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px 60px 20px 60px;
+        background-color: #e84127;
+        color: #f8f9f4;
+        border: none;
+      }
+    }
+    .unfollow {
+      button {
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px 60px 20px 60px;
+        background-color: #000000;
+        color: #f8f9f4;
+        border: none;
+      }
+    }
+    .brief_btn {
+      button {
+        width: 100%;
+        border-radius: 16px;
+        padding: 18px 20px 18px 20px;
+        background-color: #e84127;
+        border: none;
+        color: #f8f9f4;
+      }
+    }
+
+    .blog_btn {
+      button {
+        width: 100%;
+        border-radius: 16px;
+        padding: 18px 20px 18px 20px;
+        background-color: #e84127;
+        border: none;
+        color: #f8f9f4;
+      }
+    }
+  }
+  .row {
+    .block_badge {
+      display: flex;
+      justify-content: center;
+    }
+    h5 {
+      text-align: center;
+      p {
+        color: $textColor;
+      }
+    }
+  }
+  .scam {
+    .row {
+      span {
+        color: $textColor;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .col {
+    .buttons {
+      width: 70vw;
+    }
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .col {
+    .buttons {
+      width: 50vw;
+    }
+  }
+}

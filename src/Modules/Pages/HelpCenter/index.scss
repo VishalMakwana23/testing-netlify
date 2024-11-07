@@ -1,0 +1,34 @@
+@import "../../../App.scss";
+
+.logo-iamge-style {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.help-center-main-container {
+  width: 100%;
+  height: calc(100vh - 165px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.help-center-view{
+  width: 60%;
+}
+.chat-msg-helper-scroll-view {
+  height: calc(100vh - 165px);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.help-center-send-view{
+  background-color: #575252;
+  display: flex;
+  flex-direction: column;
+}
+.type-main-container-help {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
