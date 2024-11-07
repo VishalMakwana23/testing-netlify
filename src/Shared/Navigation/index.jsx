@@ -5,9 +5,7 @@ import "./index.scss";
 import {
   Backdrop,
   Box,
-  Button,
   CircularProgress,
-  Drawer,
   Icon,
   IconButton,
   Menu,
@@ -15,14 +13,12 @@ import {
   Modal,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useDispatch, useSelector } from "react-redux";
 import { resetMenu, setDarkMode } from "../../reducers/menu";
 import { resetLogin } from "../../reducers/login";
 import logo from "../../assets/media/mainLogo.svg";
 import defaultUser from "../../assets/icons/org_user.png";
 import user from "../../assets/icons/user.png";
-import TestPost from "../../assets/icons/gallery/gallery5.jpeg";
 import profile_drop_icon from "../../assets/media/profile_drop_icon.svg";
 import calender from "../../assets/images/product-img.jpg";
 import forwordArrow from "../../assets/icons/whiteIcon/forwordarrow.svg";
@@ -38,7 +34,6 @@ import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 import Menus from "../../Modules/Components/Reusable/Menus";
 import { AddMenu, notificationData } from "../../Utils/static/staticData";
-import styled from "styled-components";
 import CustomDrawer from "../../Modules/Components/Reusable/CustomDrawer";
 
 function Navigation(props) {
@@ -46,7 +41,6 @@ function Navigation(props) {
     query: "(max-width: 769px) and (min-width: 320px)",
   });
   const darkMode = useSelector((state) => state.headerMenu.darkMode);
-  const { handleDrawerToggle, onSearchClick } = props;
   const [anchorEl2, setAnchorEl2] = React.useState(null);
   const [anchorEl3, setAnchorEl3] = React.useState(null);
   const [checked, setChecked] = useState();
@@ -58,7 +52,6 @@ function Navigation(props) {
   const openUMenu = Boolean(anchorEl2);
   const openNotification = Boolean(anchorEl3);
   const { t } = useTranslation();
-  const Lang = useSelector((state) => state.language.lang);
 
   let nav = useNavigate();
   const accountInformation = useSelector((state) => state.login.LoginDetails);
@@ -86,9 +79,6 @@ function Navigation(props) {
     setAnchorEl2(null);
   };
 
-  const handleClickNotification = (event) => {
-    setAnchorEl3(event?.currentTarget);
-  };
   const handleCloseNotification = () => {
     setAnchorEl3(null);
   };
@@ -206,19 +196,19 @@ function Navigation(props) {
     // eslint-disable-next-line
   }, [accountInformation]);
 
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
+  // const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setInnerWidth(window.innerWidth);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setInnerWidth(window.innerWidth);
+  //   };
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   const onDarkModeChange = (checked) => {
     setChecked(checked);
@@ -229,22 +219,6 @@ function Navigation(props) {
     setUserName(event.target.value);
     setUsernameError("");
   };
-
-  const DrawerButtonContainer = styled("div")(() => ({
-    display: "flex",
-    justifyContent: "space-between",
-  }));
-
-  const CloseBtn = styled(ArrowBackIcon)(({ theme }) => ({
-    cursor: "pointer",
-    borderRadius: "50%",
-    padding: "5px",
-    fontSize: "1.9rem",
-    transition: "background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-    "&:hover": {
-      background: "rgba(232, 65, 39, 0.10)",
-    },
-  }));
 
   return (
     <>

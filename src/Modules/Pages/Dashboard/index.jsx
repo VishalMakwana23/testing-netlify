@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { GetCallApi } from "../../../Action/Action";
 import { useSelector } from "react-redux";
 import { Backdrop, CircularProgress } from "@mui/material";
-import AdsBanner from "../../../assets/images/adsBanner.png";
 import HomePostCard from "../../Components/HomePostCard/index";
 
 const renderLoader = () => <p></p>;
