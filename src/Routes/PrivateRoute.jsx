@@ -43,7 +43,7 @@ const drawerWidthMobile = 0;
 function PrivateRoute({ children }) {
   const darkMode = useSelector((state) => state.headerMenu.darkMode);
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [isClosing, setIsClosing] = React.useState(false);
+  // const [isClosing, setIsClosing] = React.useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const { pathname } = useLocation();
   const { t } = useTranslation();
@@ -73,19 +73,9 @@ function PrivateRoute({ children }) {
     var langRight = 0;
     var langLeft = "auto";
   }
-  const handleDrawerClose = () => {
-    setIsClosing(true);
-    setMobileOpen(false);
-  };
-
-  const handleDrawerTransitionEnd = () => {
-    setIsClosing(false);
-  };
 
   const handleDrawerToggle = () => {
-    if (!isClosing) {
-      setMobileOpen(!mobileOpen);
-    }
+    setMobileOpen(!mobileOpen);
   };
 
   const menu = [
@@ -264,9 +254,9 @@ function PrivateRoute({ children }) {
 
   const [openSmall, setOpenSmall] = useState(false);
 
-  const handleOpen = () => {
-    setOpenSmall(true);
-  };
+  // const handleOpen = () => {
+  //   setOpenSmall(true);
+  // };
 
   return loggedIn ? (
     pathname === "/profile" ||
@@ -288,7 +278,7 @@ function PrivateRoute({ children }) {
             className={`header ${pathname === "/brief" ? "back_header" : ""}`}
           >
             <Navigation
-              isClosing={isClosing}
+              // isClosing={isClosing}
               onSearchClick={() => DrawerToggle(true)}
               handleDrawerToggle={handleDrawerToggle}
             />

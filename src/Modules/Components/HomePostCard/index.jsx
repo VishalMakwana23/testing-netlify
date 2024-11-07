@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Box, Button, Chip } from "@mui/material";
 import moment from "moment";
 import Carousel from "react-multi-carousel";
@@ -9,11 +9,7 @@ import "react-multi-carousel/lib/styles.css";
 import "./index.scss";
 import VisibilitySensor from "react-visibility-sensor";
 import { PatchCallApi } from "../../../Action/Action";
-import {
-  categoryData,
-  hashTagData,
-  postActionMenu,
-} from "../../../Utils/static/staticData";
+import { categoryData, hashTagData } from "../../../Utils/static/staticData";
 import { categoryIcons } from "../../../Utils/static/icons";
 import deafultUser from "../../../assets/icons/org_user.png";
 import LikeIcon from "../../../assets/icons/postActionIcons/LikeIcon.svg";
@@ -36,12 +32,11 @@ function HomePostCard(props) {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   const [currentIndex /* setCurrentIndex */] = useState(-1);
 
-  const handleChangeMenu = (selectedMenu) => {
-    console.log("You clicked on menu : ", selectedMenu);
-  };
+  // const handleChangeMenu = (selectedMenu) => {
+  //   console.log("You clicked on menu : ", selectedMenu);
+  // };
 
   useEffect(() => {
     setData(props.data);
@@ -59,19 +54,20 @@ function HomePostCard(props) {
       popupOpen(d);
     }
   };
-  const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setInnerWidth(window.innerWidth);
-    };
+  // const [innerWidth, setInnerWidth] = useState(window.innerWidth);
 
-    window.addEventListener("resize", handleResize);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setInnerWidth(window.innerWidth);
+  //   };
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   window.addEventListener("resize", handleResize);
+
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   const responsive = {
     desktop: {

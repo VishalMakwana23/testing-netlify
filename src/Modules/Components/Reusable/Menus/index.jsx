@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Divider, Menu, MenuItem } from "@mui/material";
+import { Box, Menu, MenuItem } from "@mui/material";
 import "./index.scss";
 
 const Menus = ({ children, menu = [], value = "", handleChangeValue }) => {
